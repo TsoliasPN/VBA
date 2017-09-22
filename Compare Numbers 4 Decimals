@@ -1,5 +1,5 @@
-Public Function COMPARE_DEF(number1 As Double, number2 As Double, Optional ByVal dec As Double) As String
+Public Function COMPARE_DEF(number1 As Double, number2 As Double, Optional ByVal dec As Double = 4) As String
 Dim result As String
-If ((Round(number1, dec) = Round(number2, dec)) And (Round(number1, dec) = Round(number2, dec))) Then result = "Equal" Else result = "Not equal"
+If (Round(number1, dec) = Round(number2, dec)) Then result = "Equal" Else result = "Not equal"
 COMPARE_DEF = result
 End Function
