@@ -1,0 +1,5 @@
+Public Function getvalue(cell As String) As String
+Dim result As String
+result = Right(cell, Len(cell) - InStr(cell, ":"))
+getvalue = result
+End Function
