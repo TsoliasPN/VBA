@@ -1,0 +1,5 @@
+Public Function JIRAHEADER(ByVal cell_range As Range) As String
+
+JIRAHEADER = "||" & CONCAT(cell_range, "||") & "||"
+
+End Function
