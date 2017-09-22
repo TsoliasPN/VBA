@@ -1,0 +1,5 @@
+Public Function JIRAROWS(ByVal cell_range As Range) As String
+
+JIRAROWS = "|" & CONCAT(cell_range, "|") & "|"
+
+End Function
